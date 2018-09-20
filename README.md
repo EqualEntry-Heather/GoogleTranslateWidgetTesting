@@ -5,12 +5,13 @@ Found Issue https://groups.google.com/forum/#!topic/accessible/aq9VKcq9YVw logge
 origianl repro location was apparently impacted by a WordPress upgrade, secondary repro on http://www.csulb.edu/  appears to have been modified to work around Googles issues.
 
 Code from the CSULB site:
-<div id="google_translate_widget_element">
+'''html
+<div id="google_translate_widget_element">'
   <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
     <div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;">
       <img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;">
       <span style="vertical-align: middle;">
-      <a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)" tabindex="0">
+     <a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)" tabindex="0">
         <span>Select Language</span>
         <img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1">
         <span style="border-left: 1px solid rgb(187, 187, 187);">​</span>
@@ -20,9 +21,12 @@ Code from the CSULB site:
     </div>
   </div>
 </div>
+'''
 
 
 on another site I found the following code...
+
+'''html
 <div id="google_translate_element">
   <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
     <div id=":0.targetLanguage">
@@ -39,6 +43,6 @@ on another site I found the following code...
     </span>
   </div>
 </div>
-
+'''
 
 Creating this to test with the default code provided by Google via https://translate.google.com/manager/website/?hl=en
