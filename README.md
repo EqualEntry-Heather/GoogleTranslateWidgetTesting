@@ -1,11 +1,11 @@
 # GoogleTranslateWidgetTesting
 
-Working with a client and hit some issues with thier use of Google Translate Widget
+Working with a client and hit some issues with their use of Google Translate Widget
 Found Issue https://groups.google.com/forum/#!topic/accessible/aq9VKcq9YVw logged back on June, 22 2016
 origianl repro location was apparently impacted by a WordPress upgrade, secondary repro on http://www.csulb.edu/  appears to have been modified to work around Googles issues.
 
 Code from the CSULB site:
-'''html
+```html
 <div id="google_translate_widget_element">'
   <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
     <div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;">
@@ -21,12 +21,12 @@ Code from the CSULB site:
     </div>
   </div>
 </div>
-'''
+```
 
 
 on another site I found the following code...
 
-'''html
+```html
 <div id="google_translate_element">
   <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
     <div id=":0.targetLanguage">
@@ -43,6 +43,6 @@ on another site I found the following code...
     </span>
   </div>
 </div>
-'''
+```
 
 Creating this to test with the default code provided by Google via https://translate.google.com/manager/website/?hl=en
